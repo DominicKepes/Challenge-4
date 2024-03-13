@@ -39,7 +39,7 @@ input[type="text"] {
 }
 
 ol {
-  padding-left: 0px;
+  padding-left: 0;
   max-height: 400px;
   overflow: auto;
 }
@@ -54,7 +54,7 @@ li:nth-child(odd) {
 }
 
 .wrapper {
-  margin: 100px auto 0 auto;
+  margin: 100px auto 0;
   max-width: 600px;
 }
 
