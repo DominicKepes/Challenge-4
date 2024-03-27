@@ -5,29 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Coding Quiz</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div id="scores" class="scores"><a href="highscores.html">Highscores</a></div>
-  <div id="timer" class="timer">Time: <span id="time">0</span></div>
-  <div class="wrapper">
-    <div id="start-screen" class="start screen">
+  <div id="timer" class="timer mt-3 ml-3">Time: <span id="time">0</span></div>
+  <div class="container">
+    <div id="start-screen" class="start screen text-center">
       <h1>Coding Quiz</h1>
-      <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 15 seconds!</p>
-      <button id="start" class="start-btn">Start Quiz</button>
+      <button id="start" class="start-btn btn btn-primary">Start Quiz</button>
     </div>
     <div id="questions" class="questions screen hide">
       <h2 id="question-title" class="question-title"></h2>
       <div id="choices" class="choices"></div>
     </div>
-    <div id="end-screen" class="end screen hide">
+    <div id="end-screen" class="end screen text-center hide">
       <h3>All done!</h3>
       <p>Your final score is <span id="final-score"></span>.</p>
-      <p>Enter initials: <input type="text" id="initials" class="initials" maxlength="3"> <button id="submit" class="submit-btn">Submit</button></p>
+      <p>Enter initials: <input type="text" id="initials" class="initials form-control" maxlength="3"> <button id="submit" class="submit-btn btn btn-primary">Submit</button></p>
     </div>
     <div id="feedback" class="feedback hide"></div>
   </div>
-  <script src="./assets/js/questions.js"></script>
-  <script src="./assets/js/logic.js"></script>
+  <script src="./logic.js"></script>
 </body>
 </html>
