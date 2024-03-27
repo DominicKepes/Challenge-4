@@ -121,17 +121,5 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("final-score").textContent = score;
   }
 
-  submitBtn.addEventListener("click", function () {
-    const initials = initialsInput.value.trim();
-    if (initials !== "") {
-      // Here you can save initials and score
-      console.log("Initials:", initials);
-      console.log("Score:", score);
-      // Example: localStorage.setItem("highscore", score);
-      // Example: localStorage.setItem("initials", initials);
-      // Then redirect or show high scores
-    }
-  });
-
   startBtn.addEventListener("click", startQuiz);
 });
